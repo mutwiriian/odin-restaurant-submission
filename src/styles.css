@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    background-color: antiquewhite;
+    position: fixed;
+    padding: 5px;
+    z-index: 5;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    height: 5rem;
+    margin-top: .2rem;
+    border-radius: 70%;
+
+}
+
+.logo h2 {
+    font-size: large;
+    font-weight: bold;
+}
+nav ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+
+nav ul li button{
+    border: none;
+    background-color: transparent;
+    padding: .5rem 1rem;
+    font-size: medium;
+}
+
+nav ul li button:first-child {
+    margin-left: 1rem;
+}
+
+nav ul li button:hover{
+    border-bottom: 2px solid #000;
+    transition: all .1s ease-in;
+    cursor: pointer;
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home p {
+    font-size: 5vw;
+    line-height: 5vw;
+    margin-top: 6rem;
+}
+.home img{ 
+    margin-top: 5rem;
+    width: 60%;
+    height: auto;
+
+}
+
+.delivery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery p {
+    font-size: 5vw;
+    line-height: 5vw;
+    margin-top: 6rem;
+}
+
+.delivery img {
+    margin-top: 8rem;
+    width: 60%;
+    height: auto;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10rem;
+
+}
+.contact h2 {
+    font-size: 2vw;
+}
+.call > p {
+    font-size: 2vw;
+}
+.content {
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    /* margin-top: 5%; */
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.content-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+figure {
+    position: relative;
+    overflow: hidden;
+}
+
+figcaption {
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-weight: 500;
+    padding: 0 1rem;
+}
